@@ -1,6 +1,5 @@
 import os
 import json
-import dotenv
 from openai import OpenAI
 from browser_tools import BrowserState
 from schemas import SCRAPER_TOOLS
@@ -17,7 +16,7 @@ client = OpenAI(
 
 # We use a reliable model for tool-calling. 
 # You can change this to anthropic/claude-3.5-sonnet or meta-llama/llama-3.1-70b-instruct
-MODEL = "google/gemma-4-26b-a4b-it:free" 
+MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free" 
 
 def run_agent(user_task: str):
     print(f"🤖 Starting Task: {user_task}\n" + "-"*40)
