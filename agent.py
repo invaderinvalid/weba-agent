@@ -1,8 +1,13 @@
 import os
 import json
+import dotenv
 from openai import OpenAI
 from browser_tools import BrowserState
 from schemas import SCRAPER_TOOLS
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Initialize OpenRouter client (ensure your API key is in your environment variables)
 client = OpenAI(
