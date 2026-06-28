@@ -1,5 +1,4 @@
 from playwright.sync_api import sync_playwright
-import json
 
 class BrowserState:
     def __init__(self):
